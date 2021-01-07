@@ -1,0 +1,5 @@
+1. install vsCode ()
+2. install python (https://www.python.org/downloads/release/python-391/)
+3. install pygame
+    python -m pip install --upgrade pip
+    pip install pygame

@@ -1,0 +1,9 @@
+change window size (change variables)
+draw grid (use function/use global variables)
+detect click (use var in func)
+track turns (create var/ if-else case)
+modify field (modify array)
+draw field (write own function)
+check for win (complicated if statements)
+check for draw
+create and draw endscreen, don't modify field when game finished
