@@ -1,6 +1,6 @@
 import pygame
 
-
+# drawing functions
 def drawCircle(screen, colour, positionX, positionY, radius):
     pygame.draw.circle(screen, colour, [positionX, positionY], radius)
     return 1
@@ -23,11 +23,7 @@ def drawEndScreen(screen, text, bgColour, winSize):
         screen.blit(text, [(winSize-text.get_rect().width)/2,(winSize-text.get_rect().height)/2])
 
 
-def printField(field):
-    for line in field:
-        print(line)
-
-
+# game logic help functions
 def createEndScreenText(text, colour):
     pygame.font.init()
     font = pygame.font.SysFont('Comic Sans MS', 60)
@@ -45,3 +41,8 @@ def foreachField(field, func):
     for line in range(len(field)):
         for column in range(len(field[line])):
             func(field[line][column], line, column)
+
+# testing function
+def printField(field):
+    for line in field:
+        print(line)
